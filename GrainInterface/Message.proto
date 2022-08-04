@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package echo;
+
+message EchoRequest {
+	string name = 1;
+}
+
+message EchoReply {
+	string message = 1;
+}

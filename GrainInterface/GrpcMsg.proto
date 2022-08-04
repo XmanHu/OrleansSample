@@ -1,0 +1,11 @@
+﻿syntax = "proto3";
+
+package CoHost;
+import "Message.proto";
+import "google/protobuf/empty.proto";
+
+service CoHost{
+	rpc Echo (echo.EchoRequest) returns (echo.EchoReply);
+	rpc PerTest (google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
